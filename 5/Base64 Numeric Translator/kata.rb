@@ -4,7 +4,7 @@ def base64_to_base10(str)
   arry = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
   result = String.new
   str.each_char {|x| result += '%06b' % arry.index(x)}
-  puts result.to_i(2)
+  result.to_i(2)
 end
 
 base64_to_base10("WIN")
